@@ -17,15 +17,49 @@ const playfair = Playfair_Display({
 });
 
 export const metadata: Metadata = {
-  title: "Verlak Corporation | Independent Wealth Management & Institutional Advisory",
+  metadataBase: new URL("https://www.verlakcorporation.com"),
+  title: {
+    default: "Verlak Corporation | Independent Wealth Management & Institutional Advisory",
+    template: "%s | Verlak Corporation"
+  },
   description: "Experience independent, research-led wealth management tailored for India's premier HNI and UHNI families. Zero commission, fee-only fiduciary counsel.",
   keywords: [
     "independent wealth management India",
     "SEBI registered investment adviser",
-    "multi-generational family office",
+    "multi-generational family office India",
     "bespoke portfolio management services",
     "fee-only advisory HNI",
+    "alternative assets India",
+    "wealth stewardship",
+    "Verlak Corporation"
   ],
+  alternates: {
+    canonical: "/",
+  },
+  openGraph: {
+    title: "Verlak Corporation | Independent Wealth Management",
+    description: "Experience independent, research-led wealth management tailored for India's premier HNI and UHNI families. Zero commission, fee-only fiduciary counsel.",
+    url: "https://www.verlakcorporation.com",
+    siteName: "Verlak Corporation",
+    locale: "en_IN",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Verlak Corporation | Independent Wealth Advisory",
+    description: "Experience independent, research-led wealth management tailored for India's premier HNI and UHNI families.",
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
+  },
 };
 
 export default function RootLayout({
