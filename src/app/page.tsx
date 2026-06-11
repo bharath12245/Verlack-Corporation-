@@ -86,8 +86,14 @@ export default function HomePage() {
         {/* Subtle background graphic line overlay */}
         <div className="absolute inset-0 opacity-5 bg-[radial-gradient(#B58A45_1px,transparent_1px)] [background-size:24px_24px]"></div>
         
-        <div className="relative z-10 mx-auto max-w-5xl text-center space-y-8">
-          <div className="inline-flex items-center space-x-2 border border-brand-gold/30 px-3 py-1 text-[10px] tracking-[0.2em] text-brand-gold uppercase bg-brand-navy/60 font-semibold">
+        <div className="relative z-10 mx-auto max-w-5xl text-center space-y-8 flex flex-col items-center">
+          <img 
+            src="/logo.jpg" 
+            alt="Verlak Emblem" 
+            className="h-28 w-28 object-cover object-top border border-brand-gold/30 rounded-none shadow-xl mb-2" 
+          />
+          
+          <div className="inline-flex items-center space-x-2 border border-brand-gold/30 px-3 py-1 text-[10px] tracking-[0.25em] text-brand-gold uppercase bg-brand-navy/60 font-semibold">
             <span>Fiduciary-First Advisory</span>
             <span className="w-1 h-1 bg-brand-gold rounded-full"></span>
             <span>SEBI Registration Pending</span>
