@@ -39,20 +39,13 @@ export default function Footer() {
           
           {/* Brand & Wordmark */}
           <div className="lg:col-span-2">
-            <Link href="/" className="flex items-center space-x-3 mb-4">
-              <img 
-                src="/logo.jpg" 
-                alt="Verlak Emblem" 
-                className="h-12 w-12 object-cover object-top border border-brand-gold/30" 
-              />
-              <div className="flex flex-col">
-                <span className="font-serif text-2xl tracking-widest text-brand-ivory uppercase font-bold leading-none">
-                  Verlak
-                </span>
-                <span className="font-sans text-[8px] tracking-[0.3em] text-brand-gold uppercase mt-1 font-medium leading-none">
-                  Corporation
-                </span>
-              </div>
+            <Link href="/" className="flex flex-col mb-4">
+              <span className="font-serif text-2xl tracking-widest text-brand-ivory uppercase font-bold">
+                Verlak
+              </span>
+              <span className="font-sans text-[8px] tracking-[0.3em] text-brand-gold uppercase -mt-1 font-medium">
+                Corporation
+              </span>
             </Link>
             <p className="text-xs text-brand-silver leading-relaxed max-w-sm">
               Verlak Corporation is India&apos;s most distinguished independent investment advisory and wealth management firm. 

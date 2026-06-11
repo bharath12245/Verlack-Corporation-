@@ -81,20 +81,13 @@ export default function Header() {
         <div className="flex h-20 items-center justify-between">
           {/* Logo / Wordmark */}
           <div className="flex items-center">
-            <Link href="/" className="group flex items-center space-x-3">
-              <img 
-                src="/logo.jpg" 
-                alt="Verlak Emblem" 
-                className="h-10 w-10 object-cover object-top border border-brand-gold/20" 
-              />
-              <div className="flex flex-col">
-                <span className="font-serif text-xl sm:text-2xl tracking-widest text-brand-navy font-bold uppercase leading-none">
-                  Verlak
-                </span>
-                <span className="font-sans text-[8px] tracking-[0.3em] text-brand-gold uppercase mt-1 font-medium leading-none">
-                  Corporation
-                </span>
-              </div>
+            <Link href="/" className="group flex flex-col">
+              <span className="font-serif text-2xl tracking-widest text-brand-navy font-semibold uppercase">
+                Verlak
+              </span>
+              <span className="font-sans text-[8px] tracking-[0.3em] text-brand-gold uppercase -mt-1 font-medium">
+                Corporation
+              </span>
             </Link>
           </div>
 
