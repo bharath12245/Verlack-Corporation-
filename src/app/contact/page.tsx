@@ -15,16 +15,65 @@ export default function ContactPage() {
   });
 
   const [submitted, setSubmitted] = useState(false);
+  const [submitting, setSubmitting] = useState(false);
   const [error, setError] = useState("");
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     if (!formData.fullName || !formData.email || !formData.phone || !formData.fiduciaryAck) {
       setError("Please fill out all mandatory fields and acknowledge the minimum portfolio threshold.");
       return;
     }
     setError("");
-    setSubmitted(true);
+    setSubmitting(true);
+
+    const accessKey = process.env.NEXT_PUBLIC_WEB3FORMS_KEY || "YOUR_ACCESS_KEY_HERE";
+
+    try {
+      const response = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          "Accept": "application/json"
+        },
+        body: JSON.stringify({
+          access_key: accessKey,
+          name: formData.fullName,
+          email: formData.email,
+          phone: formData.phone,
+          subject: `New Lead: ${formData.interest} - ${formData.fullName}`,
+          from_name: "Verlak Website Lead Desk",
+          message: `
+--- VERLAK CORPORATION LEAD SUBMISSION ---
+
+Client Name: ${formData.fullName}
+Client Email: ${formData.email}
+Client Phone: ${formData.phone}
+Target Segment: ${formData.assetLevel}
+Primary Advisory Goal: ${formData.interest}
+Fiduciary Acknowledgment Checked: Yes (₹2 Crore limit)
+
+Custom Inquiry Details:
+${formData.requirements || "None specified."}
+          `
+        })
+      });
+
+      const data = await response.json();
+      if (response.ok && data.success) {
+        setSubmitted(true);
+      } else {
+        if (accessKey === "YOUR_ACCESS_KEY_HERE") {
+          setError("Form system is not active. Please configure the NEXT_PUBLIC_WEB3FORMS_KEY environment variable.");
+        } else {
+          setError(data.message || "An error occurred. Please contact us directly at info@verlakcorporation.com.");
+        }
+      }
+    } catch (err) {
+      setError("Network connection issue. Please send an email directly to info@verlakcorporation.com.");
+    } finally {
+      setSubmitting(false);
+    }
   };
 
   const offices = [
@@ -218,9 +267,10 @@ export default function ContactPage() {
                   {/* Submit Button */}
                   <button
                     type="submit"
-                    className="w-full py-3.5 bg-brand-navy text-brand-ivory text-xs font-bold tracking-widest uppercase hover:bg-brand-gold hover:text-brand-navy transition-colors duration-300 shadow-sm"
+                    disabled={submitting}
+                    className="w-full py-3.5 bg-brand-navy text-brand-ivory text-xs font-bold tracking-widest uppercase hover:bg-brand-gold hover:text-brand-navy transition-colors duration-300 shadow-sm disabled:opacity-50 disabled:cursor-not-allowed"
                   >
-                    Request Private Consultation Engagement
+                    {submitting ? "Transmitting Request..." : "Request Private Consultation Engagement"}
                   </button>
                 </form>
               )}
