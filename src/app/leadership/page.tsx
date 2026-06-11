@@ -1,6 +1,12 @@
 import React from "react";
+import { Metadata } from "next";
 import Link from "next/link";
 import { UserCheck, Award, GraduationCap, Scale, ShieldAlert, CheckCircle2 } from "lucide-react";
+
+export const metadata: Metadata = {
+  title: "Executive Leadership & Private Advisory Partners",
+  description: "Meet the multidisciplinary panel of seasoned investment partners, research directors, and legal compliance advisors guiding Verlak Corporation's fiduciary wealth services.",
+};
 
 export default function LeadershipPage() {
   const executives = [

@@ -1,4 +1,10 @@
 import React from "react";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Compliance Disclosures & Fiduciary Fee Schedules",
+  description: "Read Verlak Corporation's regulatory disclosures, conflict of interest policies, and transparent asset-under-advisory (AUA) fee schedules.",
+};
 
 export default function DisclosuresPage() {
   return (

@@ -1,4 +1,10 @@
 import React from "react";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Terms and Conditions of Advisory Services",
+  description: "Read Verlak Corporation's terms of service governing website usage, calculator tools, client portal security, and our fiduciary advisory capacity.",
+};
 
 export default function TermsAndConditionsPage() {
   return (

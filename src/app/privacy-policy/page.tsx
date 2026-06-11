@@ -1,4 +1,10 @@
 import React from "react";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Privacy Policy & DPDP Act Compliance",
+  description: "Read Verlak Corporation's privacy guidelines detailing client data rights and security measures conforming to the Digital Personal Data Protection (DPDP) Act 2023.",
+};
 
 export default function PrivacyPolicyPage() {
   return (

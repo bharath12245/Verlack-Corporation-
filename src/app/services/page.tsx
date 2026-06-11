@@ -1,6 +1,12 @@
 import React from "react";
+import { Metadata } from "next";
 import Link from "next/link";
 import { ArrowRight, Layers, Briefcase, Landmark, Percent, Settings, ShieldAlert, Globe, GraduationCap } from "lucide-react";
+
+export const metadata: Metadata = {
+  title: "Core Capabilities & Investment Segments",
+  description: "Explore Verlak Corporation's wealth management advisory ecosystem, including PMS, Investment Advisory, Family Office, Alternative Investments, and Estate Succession.",
+};
 
 export default function ServicesPage() {
   const serviceCategories = [

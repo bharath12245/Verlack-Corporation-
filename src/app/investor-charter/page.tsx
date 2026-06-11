@@ -1,4 +1,10 @@
 import React from "react";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "SEBI Investor Charter & Client Rights",
+  description: "Official SEBI Investor Charter for Verlak Corporation detailing client rights, advisory duties, and regulatory grievance resolution mechanisms.",
+};
 
 export default function InvestorCharterPage() {
   return (
