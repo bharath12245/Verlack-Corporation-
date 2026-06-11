@@ -1,0 +1,59 @@
+@import "tailwindcss";
+
+@theme {
+  --color-brand-navy: #071D49;
+  --color-brand-gold: #B58A45;
+  --color-brand-ivory: #F7F5EF;
+  --color-brand-slate: #3A4A5E;
+  --color-brand-silver: #8A9BAE;
+
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+  --font-serif: var(--font-playfair), ui-serif, Georgia, serif;
+}
+
+:root {
+  --background: #F7F5EF;
+  --foreground: #071D49;
+}
+
+/* Base resets & typography */
+html,
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+  min-height: 100%;
+}
+
+body {
+  font-family: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Custom scrollbar for premium feel */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #F7F5EF;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #3A4A5E;
+  border-radius: 2px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #B58A45;
+}
+
+/* Print optimizations and layout spacing rules */
+@media print {
+  body {
+    background: white;
+    color: black;
+  }
+}
