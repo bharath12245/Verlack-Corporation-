@@ -9,7 +9,7 @@ export default function ContactPageClient() {
     email: "",
     phone: "",
     assetLevel: "₹2 Crore – ₹10 Crore",
-    interest: "Wealth Management Mandate",
+    interest: "Portfolio Management (PMS)",
     requirements: "",
     fiduciaryAck: false
   });
@@ -99,12 +99,12 @@ ${formData.requirements || "None specified."}
 
   const faqs = [
     {
-      q: "What documents should I gather for my initial advisory session?",
-      a: "To help us maximize the value of your first session, it is helpful to prepare high-level asset allocations, existing mutual fund summaries, or an overview of current private business holding structures and liabilities."
+      q: "What should I prepare for our initial alignment discussion?",
+      a: "It is helpful to prepare a high-level overview of your current liquidity targets, long-term capital horizons, and any specific private asset or business holdings you seek to transition into our co-investment vehicle."
     },
     {
-      q: "How long does it typically take to hear back after submitting an inquiry?",
-      a: "A senior partner from our private advisory desk will review your requirements and reach out within one business day to coordinate a scheduling time for your initial discussion."
+      q: "How long does it typically take to hear back after submitting a partner inquiry?",
+      a: "An allocation partner from our capital desk will review your requirements and reach out within one business day to coordinate a private discussion."
     }
   ];
 
@@ -119,11 +119,11 @@ ${formData.requirements || "None specified."}
             Initiate Contact
           </span>
           <h1 className="font-serif text-4xl sm:text-5xl font-light leading-tight">
-            Begin a Secure Partnership. <span className="italic">Establish Your Legacy.</span>
+            Co-Investing Partnership. <span className="italic">Compound Value Together.</span>
           </h1>
           <div className="h-0.5 w-16 bg-brand-gold mx-auto"></div>
           <p className="font-sans text-sm sm:text-base text-brand-silver max-w-2xl mx-auto leading-relaxed">
-            Contact our senior investment partners to schedule a comprehensive, conflict-free review of your family&apos;s financial architecture.
+            Connect with our allocation partners to explore capital alignment, strategic holdings, and concentrated value portfolios.
           </p>
         </div>
       </section>
@@ -138,11 +138,11 @@ ${formData.requirements || "None specified."}
               <div className="space-y-3">
                 <span className="text-[9px] font-bold tracking-widest text-brand-gold uppercase block">Consultation Request</span>
                 <h2 className="font-serif text-2xl sm:text-3xl text-brand-navy font-light leading-tight">
-                  A High-Touch Onboarding
+                  Partner Alignment Discussion
                 </h2>
                 <div className="h-0.5 w-12 bg-brand-gold"></div>
                 <p className="text-xs sm:text-sm text-brand-slate leading-relaxed">
-                  We treat every initial inquiry with complete discretion and professional care. Our introductory sessions are structured as open discussions focused on understanding your family&apos;s unique financial landscape, rather than generic sales presentations.
+                  We treat every capital partnership inquiry with complete discretion. Our initial discussions focus on aligning investment horizons and exploring capital contributions, rather than transactional sales pitches.
                 </p>
               </div>
 
@@ -228,12 +228,11 @@ ${formData.requirements || "None specified."}
                       onChange={(e) => setFormData({ ...formData, interest: e.target.value })}
                       className="px-4 py-2.5 bg-white border border-brand-gold/20 text-xs text-brand-navy focus:outline-none focus:border-brand-gold"
                     >
-                      <option>Wealth Management Mandate</option>
                       <option>Portfolio Management (PMS)</option>
+                      <option>Alternative Investments</option>
+                      <option>Global Investments</option>
                       <option>Investment Advisory</option>
-                      <option>Family Office Services</option>
-                      <option>Alternative Asset Access</option>
-                      <option>Corporate Treasury / M&A Solutions</option>
+                      <option>Corporate Treasury Solutions</option>
                     </select>
                   </div>
 
@@ -260,7 +259,7 @@ ${formData.requirements || "None specified."}
                       className="mt-1 h-4 w-4 border-brand-gold text-brand-gold focus:ring-brand-gold rounded-none"
                     />
                     <label htmlFor="fiduciaryAck" className="text-[11px] text-brand-slate leading-relaxed select-none">
-                      I acknowledge that Verlak Corporation maintains a minimum portfolio engagement threshold of <strong>₹2 Crore</strong> aggregate investable capital. *
+                      I acknowledge that Verlak Corporation maintains a minimum capital partner contribution threshold of <strong>₹2 Crore</strong> investable capital. *
                     </label>
                   </div>
 

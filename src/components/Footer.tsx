@@ -5,22 +5,22 @@ export default function Footer() {
   const currentYear = new Date().getFullYear();
 
   const services = [
-    { name: "Wealth Management", href: "/services/wealth-management" },
+    // { name: "Wealth Management", href: "/services/wealth-management" },
     { name: "Portfolio Management (PMS)", href: "/services/portfolio-management" },
-    { name: "Investment Advisory", href: "/services/investment-advisory" },
     { name: "Alternative Investments", href: "/services/alternative-investments" },
-    { name: "Family Office Services", href: "/services/family-office-services" },
-    { name: "Estate & Succession", href: "/services/estate-succession" },
     { name: "Global Investments", href: "/services/global-investments" },
-    { name: "Corporate Advisory", href: "/services/corporate-advisory" },
+    { name: "Investment Advisory", href: "/services/investment-advisory" },
+    // { name: "Family Office Services", href: "/services/family-office-services" },
+    // { name: "Estate & Succession", href: "/services/estate-succession" },
+    // { name: "Corporate Advisory", href: "/services/corporate-advisory" },
   ];
 
   const whoWeServe = [
-    { name: "HNI Families", href: "/services/wealth-management" },
-    { name: "UHNI & Ultra-Wealthy", href: "/services/family-office-services" },
-    { name: "Family Office", href: "/services/family-office-services" },
-    { name: "NRI & Global Indians", href: "/services/global-investments" },
-    { name: "Corporates & Founders", href: "/services/corporate-advisory" },
+    { name: "HNI Families", href: "/services/portfolio-management" },
+    { name: "UHNI", href: "/services/alternative-investments" },
+    // { name: "Family Office", href: "/services/family-office-services" },
+    // { name: "NRI & Global Indians", href: "/services/global-investments" },
+    { name: "Corporates & Founders", href: "/services/portfolio-management" },
   ];
 
   const aboutLinks = [
@@ -48,9 +48,7 @@ export default function Footer() {
               </span>
             </Link>
             <p className="text-xs text-brand-silver leading-relaxed max-w-sm">
-              Verlak Corporation is India&apos;s most distinguished independent investment advisory and wealth management firm. 
-              Serving discerning HNI and UHNI families with research-led strategies, fiduciary independence, and global access. 
-              We do not sell products. We build legacies.
+              Verlak Corporation is a premier investment holding company. We do not manage retail third-party money; instead, we raise centralized capital pools and allocate them across high-conviction portfolios, alternatives, and global business holdings. We build legacies through permanent value compounding.
             </p>
           </div>
 

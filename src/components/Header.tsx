@@ -39,22 +39,22 @@ export default function Header() {
   };
 
   const services = [
-    { name: "Wealth Management", href: "/services/wealth-management" },
+    // { name: "Wealth Management", href: "/services/wealth-management" },
     { name: "Portfolio Management (PMS)", href: "/services/portfolio-management" },
-    { name: "Investment Advisory", href: "/services/investment-advisory" },
     { name: "Alternative Investments", href: "/services/alternative-investments" },
-    { name: "Family Office Services", href: "/services/family-office-services" },
-    { name: "Estate & Succession", href: "/services/estate-succession" },
     { name: "Global Investments", href: "/services/global-investments" },
-    { name: "Corporate Advisory", href: "/services/corporate-advisory" },
+    { name: "Investment Advisory", href: "/services/investment-advisory" },
+    // { name: "Family Office Services", href: "/services/family-office-services" },
+    // { name: "Estate & Succession", href: "/services/estate-succession" },
+    // { name: "Corporate Advisory", href: "/services/corporate-advisory" },
   ];
 
   const whoWeServe = [
-    { name: "HNI Families", href: "/services/wealth-management" },
-    { name: "UHNI & Ultra-Wealthy", href: "/services/family-office-services" },
-    { name: "Family Office", href: "/services/family-office-services" },
-    { name: "NRI & Global Indians", href: "/services/global-investments" },
-    { name: "Corporates & Founders", href: "/services/corporate-advisory" },
+    { name: "HNI Families", href: "/services/portfolio-management" },
+    { name: "UHNI", href: "/services/alternative-investments" },
+    // { name: "Family Office", href: "/services/family-office-services" },
+    // { name: "NRI & Global Indians", href: "/services/global-investments" },
+    { name: "Corporates & Founders", href: "/services/portfolio-management" },
   ];
 
   const ourThinking = [

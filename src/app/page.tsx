@@ -6,75 +6,75 @@ export default function HomePage() {
   const pathways = [
     {
       title: "HNI Families",
-      description: "Wealth Advisory & PMS",
-      details: "Preserving capital and driving tax-efficient compounding for portfolios from ₹2 Crore to ₹25 Crore.",
-      href: "/services/wealth-management",
-      tag: "COMPRESSED COMPOUNDING"
+      description: "Value Portfolios & PMS",
+      details: "Driving long-term value compounding and high-conviction equity alignment for substantial family capital.",
+      href: "/services/portfolio-management",
+      tag: "VALUE COMPOUNDING"
     },
     {
-      title: "UHNI & Family Offices",
-      description: "Comprehensive Legacy Services",
-      details: "Institutional asset allocation, estate mapping, and private market deal flow for capital exceeding ₹25 Crore.",
-      href: "/services/family-office-services",
-      tag: "LEGACY ARCHITECTURE"
+      title: "UHNI",
+      description: "Capital Partnerships & Alternatives",
+      details: "Co-investing structures and private market allocation alongside our permanent holding pool.",
+      href: "/services/alternative-investments",
+      tag: "PERMANENT CAPITAL"
     },
-    {
-      title: "NRI & Global Indians",
-      description: "Cross-Border Synchronization",
-      details: "Navigating FEMA regulations, repatriation protocols, and US/UK tax efficiency with direct investment channels.",
-      href: "/services/global-investments",
-      tag: "GLOBAL TO LOCAL"
-    },
+    // {
+    //   title: "NRI & Global Indians",
+    //   description: "Cross-Border Synchronization",
+    //   details: "Navigating FEMA regulations, repatriation protocols, and US/UK tax efficiency with direct investment channels.",
+    //   href: "/services/global-investments",
+    //   tag: "GLOBAL TO LOCAL"
+    // },
     {
       title: "Corporates & Founders",
-      description: "Capital & Treasury Solutions",
-      details: "Structuring liquidity events, corporate treasury optimization, and corporate finance advisory mandates.",
-      href: "/services/corporate-advisory",
+      description: "Treasury & Strategic Holdings",
+      details: "Allocating corporate surplus into high-conviction public equities and strategic private business stakes.",
+      href: "/services/portfolio-management",
       tag: "BALANCE SHEET OPTIMIZATION"
     }
   ];
 
   const services = [
-    {
-      title: "Wealth Management",
-      desc: "Dynamic goal mapping and institutional asset allocation across traditional and alternative asset classes.",
-      href: "/services/wealth-management"
-    },
+    // {
+    //   title: "Wealth Management",
+    //   desc: "Dynamic goal mapping and institutional asset allocation across traditional and alternative asset classes.",
+    //   href: "/services/wealth-management"
+    // },
     {
       title: "Portfolio Management (PMS)",
-      desc: "High-conviction concentrated equity mandates with direct asset ownership and complete transparency.",
+      desc: "High-conviction concentrated equity mandates and value-compounding public portfolios.",
       href: "/services/portfolio-management"
     },
     {
       title: "Investment Advisory",
-      desc: "Pure fee-only counsel with zero distribution or product incentives, fully aligned with your outcomes.",
+      desc: "Strategic advisory on capital allocation, capital structure, and treasury compounding.",
       href: "/services/investment-advisory"
     },
     {
       title: "Alternative Investments",
-      desc: "Institutional access to tier-one private equity, private credit, and unlisted venture opportunities.",
+      desc: "Co-investing opportunities in private equity, private credit, and strategic operating businesses.",
       href: "/services/alternative-investments"
     },
-    {
-      title: "Estate & Succession Planning",
-      desc: "Comprehensive trust creation, family constitutions, and multi-generational lineage protection.",
-      href: "/services/estate-succession"
-    },
+    // {
+    //   title: "Estate & Succession Planning",
+    //   desc: "Comprehensive trust creation, family constitutions, and multi-generational lineage protection.",
+    //   href: "/services/estate-succession"
+    // },
     {
       title: "Global Investments",
-      desc: "Sophisticated international asset allocation leveraging the Liberalised Remittance Scheme (LRS).",
+      desc: "Diversifying compounding assets into global markets and international business holdings.",
       href: "/services/global-investments"
     }
   ];
 
   const faqs = [
     {
-      q: "What makes Verlak Corporation structurally different from a private bank?",
-      a: "Traditional private banks operate on a distribution model, earning commissions from products they cross-sell, which introduces structural conflicts of interest. Verlak is a pure SEBI-Registered Investment Adviser operating on a 100% fee-only, zero-commission framework. We are legally bound by a fiduciary duty to serve only your financial outcome."
+      q: "What is the structural difference between Verlak Corporation and a wealth management firm?",
+      a: "Traditional wealth managers operate on a fiduciary fee-for-service model managing individual retail accounts. Verlak Corporation is modeled as an investment holding company (similar to Fairfax Financial). We raise capital from selective HNI, UHNI, and corporate partners, combining it into centralized pools to invest in high-conviction portfolios and strategic holdings."
     },
     {
-      q: "How does the onboarding process begin for a portfolio above ₹25 Crore?",
-      a: "For ultra-high-net-worth portfolios, we initiate our proprietary Wealth Health Score framework. This maps your entire asset ecosystem across 8 distinct dimensions (Portfolio Alignment, Goal Progress, Risk Calibration, Tax Efficiency, and more) before any capital allocation strategy is discussed or executed."
+      q: "How does Verlak co-invest and align its interests with partners?",
+      a: "Our interests are fully aligned because we treat capital as a permanent pool for value creation. Rather than maximizing assets under management (AUM) for fee generation, our focus is compounding the book value of our holdings over the long term, investing alongside our capital partners."
     }
   ];
 
@@ -88,17 +88,17 @@ export default function HomePage() {
         
         <div className="relative z-10 mx-auto max-w-5xl text-center space-y-8">
           <div className="inline-flex items-center space-x-2 border border-brand-gold/30 px-3 py-1 text-[10px] tracking-[0.2em] text-brand-gold uppercase bg-brand-navy/60 font-semibold">
-            <span>Fiduciary-First Advisory</span>
+            <span>Investment Holding Company</span>
             <span className="w-1 h-1 bg-brand-gold rounded-full"></span>
-            <span>SEBI Registration Pending</span>
+            <span>Value Investing Model</span>
           </div>
 
           <h1 className="font-serif text-4xl sm:text-6xl font-normal leading-tight tracking-tight max-w-4xl mx-auto">
-            Where Wealth Meets <span className="text-brand-gold italic">Conviction.</span>
+            Compounding Value through <span className="text-brand-gold italic">Permanent Capital.</span>
           </h1>
 
           <p className="font-sans text-sm sm:text-lg text-brand-silver max-w-2xl mx-auto leading-relaxed">
-            Independent wealth management built for families, founders, and institutions seeking long-term capital stewardship.
+            Modeled after global investment holding companies, Verlak raises centralized capital pools to allocate into high-conviction portfolios, strategic acquisitions, and global value assets. We do not manage retail client wealth; we compound value as partners.
           </p>
 
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 pt-4">
@@ -123,24 +123,24 @@ export default function HomePage() {
         <div className="mx-auto max-w-7xl">
           <div className="grid grid-cols-2 md:grid-cols-5 gap-6 text-center divide-x divide-brand-gold/10">
             <div className="flex flex-col justify-center px-4">
-              <span className="font-serif text-sm tracking-wide text-brand-gold font-medium">Independent</span>
-              <span className="font-sans text-[10px] tracking-widest text-brand-silver uppercase mt-1">Wealth Advisory</span>
+              <span className="font-serif text-sm tracking-wide text-brand-gold font-medium">Holding Company</span>
+              <span className="font-sans text-[10px] tracking-widest text-brand-silver uppercase mt-1">Operational Model</span>
             </div>
             <div className="flex flex-col justify-center px-4">
-              <span className="font-serif text-sm tracking-wide text-brand-gold font-medium">Research-Led</span>
-              <span className="font-sans text-[10px] tracking-widest text-brand-silver uppercase mt-1">Investment Intelligence</span>
+              <span className="font-serif text-sm tracking-wide text-brand-gold font-medium">Permanent Capital</span>
+              <span className="font-sans text-[10px] tracking-widest text-brand-silver uppercase mt-1">Value Compounding</span>
             </div>
             <div className="flex flex-col justify-center px-4">
-              <span className="font-serif text-sm tracking-wide text-brand-gold font-medium">Fiduciary-First</span>
-              <span className="font-sans text-[10px] tracking-widest text-brand-silver uppercase mt-1">Outcome Alignment</span>
+              <span className="font-serif text-sm tracking-wide text-brand-gold font-medium">Centralized Pools</span>
+              <span className="font-sans text-[10px] tracking-widest text-brand-silver uppercase mt-1">No Retail Assets</span>
             </div>
             <div className="flex flex-col justify-center px-4">
-              <span className="font-serif text-sm tracking-wide text-brand-gold font-medium">Global</span>
-              <span className="font-sans text-[10px] tracking-widest text-brand-silver uppercase mt-1">Investment Access</span>
+              <span className="font-serif text-sm tracking-wide text-brand-gold font-medium">Strategic Equity</span>
+              <span className="font-sans text-[10px] tracking-widest text-brand-silver uppercase mt-1">Concentrated Stakes</span>
             </div>
             <div className="flex flex-col justify-center px-4 col-span-2 md:col-span-1 border-t border-brand-gold/10 md:border-t-0 mt-4 md:mt-0 pt-4 md:pt-0">
-              <span className="font-serif text-sm tracking-wide text-brand-gold font-medium">Institutional</span>
-              <span className="font-sans text-[10px] tracking-widest text-brand-silver uppercase mt-1">Portfolio Construction</span>
+              <span className="font-serif text-sm tracking-wide text-brand-gold font-medium">Global Scope</span>
+              <span className="font-sans text-[10px] tracking-widest text-brand-silver uppercase mt-1">International Assets</span>
             </div>
           </div>
         </div>
@@ -155,7 +155,7 @@ export default function HomePage() {
             </h2>
             <div className="h-0.5 w-16 bg-brand-gold"></div>
             <p className="text-sm sm:text-base text-brand-slate leading-relaxed">
-              Discover our institutional infrastructure, designed exclusively to match the scale, complexity, and structural nuances of your specific wealth ecosystem.
+              Discover our capital partner structures, designed exclusively for alignment with long-term compounders, family offices, and corporate balance sheets.
             </p>
           </div>
 
@@ -205,9 +205,7 @@ export default function HomePage() {
             </h2>
             <div className="h-0.5 w-16 bg-brand-gold"></div>
             <p className="text-sm sm:text-base text-brand-silver leading-relaxed max-w-xl">
-              Market volatility is temporary; structural conviction is permanent. The Verlak Method is our proprietary 
-              six-pillar investment architecture (Quality, Growth, Longevity, Global, Legacy, Tax-Efficiency) deployed 
-              to decouple your family capital from short-term market anxiety and align it with long-term macroeconomic realities.
+              Modeled after the disciplined capital allocation of Fairfax Financial, we view volatility as an allocator's greatest asset. We pool permanent capital from selected HNI families, UHNI partners, and corporate treasuries, deploying it into undervalued public equities and high-conviction private stakes with a multi-decade horizon. We do not manage retail funds for fees; we co-invest for absolute long-term returns.
             </p>
             <div className="pt-4">
               <Link 
@@ -222,11 +220,11 @@ export default function HomePage() {
           <div className="lg:col-span-5 bg-brand-navy/60 border border-brand-gold/20 p-10 space-y-6 flex flex-col justify-center">
             <span className="text-5xl font-serif text-brand-gold leading-none">&ldquo;</span>
             <p className="font-serif text-lg sm:text-xl text-brand-ivory italic leading-relaxed">
-              Your wealth deserves more than a transactional product. It deserves an enduring philosophy.
+              We do not manage third-party money for fee-generation. We partner to raise capital, build value, and compound it over generations.
             </p>
             <div className="h-px w-12 bg-brand-gold/30"></div>
             <p className="text-[10px] tracking-wider text-brand-silver uppercase font-semibold">
-              The Verlak Fiduciary Charter
+              The Verlak Capital Alignment
             </p>
           </div>
 
@@ -245,7 +243,7 @@ export default function HomePage() {
             </h2>
             <div className="h-0.5 w-16 bg-brand-gold"></div>
             <p className="text-sm sm:text-base text-brand-slate leading-relaxed">
-              An integrated ecosystem where every capability informs the next—replicating the global private banking structures of Geneva and New York, tailored for India’s regulatory landscape.
+              A centralized capital allocation framework—modeled after global value-oriented investment holdings, tailored for long-term compounders.
             </p>
           </div>
 
@@ -460,17 +458,17 @@ export default function HomePage() {
         <div className="absolute inset-0 opacity-5 bg-[radial-gradient(#B58A45_1px,transparent_1px)] [background-size:24px_24px]"></div>
         <div className="relative z-10 mx-auto max-w-4xl space-y-8">
           <span className="text-[10px] font-bold tracking-[0.25em] text-brand-gold uppercase block">
-            Partner with an Independent Fiduciary
+            Partner with a Value-Driven Holding Company
           </span>
           <h2 className="font-serif text-3xl sm:text-5xl font-light">
-            Begin Your Wealth Stewardship Journey.
+            Align with Permanent Value Compounding.
           </h2>
           <div className="h-0.5 w-16 bg-brand-gold mx-auto"></div>
           <p className="text-sm text-brand-silver max-w-2xl mx-auto leading-relaxed">
-            Connect with a senior partner for a comprehensive, conflict-free valuation of your current portfolio architecture.
+            Connect with our capital allocation team to explore co-investment partnerships and strategic holdings.
             <br />
             <span className="text-brand-gold font-semibold mt-2 block text-xs tracking-wider uppercase">
-              Minimum engagement threshold: ₹2 Crore portfolio aggregate.
+              Minimum capital partner threshold: ₹2 Crore aggregate contribution.
             </span>
           </p>
           <div className="pt-4">

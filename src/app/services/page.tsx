@@ -4,19 +4,19 @@ import Link from "next/link";
 import { ArrowRight, Layers, Briefcase, Landmark, Percent, Settings, ShieldAlert, Globe, GraduationCap } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Core Capabilities & Investment Segments",
-  description: "Explore Verlak Corporation's wealth management advisory ecosystem, including PMS, Investment Advisory, Family Office, Alternative Investments, and Estate Succession.",
+  title: "Core Capabilities & Capital Allocation",
+  description: "Explore Verlak Corporation's core capabilities, including Portfolio Management (PMS), Alternative Investments, Global Investments, and Investment Advisory.",
 };
 
 export default function ServicesPage() {
   const serviceCategories = [
-    {
-      name: "Wealth Management",
-      slug: "wealth-management",
-      tagline: "Comprehensive Capital Architecture",
-      desc: "An integrated, goals-based asset stewardship mandate that structures your entire financial ecosystem for sustained long-term compounding.",
-      icon: Layers
-    },
+    // {
+    //   name: "Wealth Management",
+    //   slug: "wealth-management",
+    //   tagline: "Comprehensive Capital Architecture",
+    //   desc: "An integrated, goals-based asset stewardship mandate that structures your entire financial ecosystem for sustained long-term compounding.",
+    //   icon: Layers
+    // },
     {
       name: "Portfolio Management (PMS)",
       slug: "portfolio-management",
@@ -38,20 +38,20 @@ export default function ServicesPage() {
       desc: "Diversify beyond public markets with exclusive access to curated private credit, tier-one private equity, and unlisted alternative assets.",
       icon: Settings
     },
-    {
-      name: "Family Office Services",
-      slug: "family-office-services",
-      tagline: "Securing Family Legacies",
-      desc: "A dedicated, comprehensive Chief Investment Officer infrastructure designed to protect and grow the multi-generational capital of India's premier families.",
-      icon: Landmark
-    },
-    {
-      name: "Estate & Succession",
-      slug: "estate-succession",
-      tagline: "Protecting Lineage Assets",
-      desc: "Structuring private family trusts and robust succession frameworks to ensure your assets transfer smoothly to future generations without legal friction.",
-      icon: ShieldAlert
-    },
+    // {
+    //   name: "Family Office Services",
+    //   slug: "family-office-services",
+    //   tagline: "Securing Family Legacies",
+    //   desc: "A dedicated, comprehensive Chief Investment Officer infrastructure designed to protect and grow the multi-generational capital of India's premier families.",
+    //   icon: Landmark
+    // },
+    // {
+    //   name: "Estate & Succession",
+    //   slug: "estate-succession",
+    //   tagline: "Protecting Lineage Assets",
+    //   desc: "Structuring private family trusts and robust succession frameworks to ensure your assets transfer smoothly to future generations without legal friction.",
+    //   icon: ShieldAlert
+    // },
     {
       name: "Global Investments",
       slug: "global-investments",
@@ -59,13 +59,13 @@ export default function ServicesPage() {
       desc: "Sophisticated cross-border asset management allowing resident investors to access global markets and helping NRIs build long-term assets at home.",
       icon: Globe
     },
-    {
-      name: "Corporate Advisory",
-      slug: "corporate-advisory",
-      tagline: "Capital & Treasury Solutions",
-      desc: "Strategic capital markets advice and treasury management designed for founder-led companies, family enterprises, and growing mid-market corporates.",
-      icon: GraduationCap
-    }
+    // {
+    //   name: "Corporate Advisory",
+    //   slug: "corporate-advisory",
+    //   tagline: "Capital & Treasury Solutions",
+    //   desc: "Strategic capital markets advice and treasury management designed for founder-led companies, family enterprises, and growing mid-market corporates.",
+    //   icon: GraduationCap
+    // }
   ];
 
   return (
@@ -79,11 +79,11 @@ export default function ServicesPage() {
             Capabilities Matrix
           </span>
           <h1 className="font-serif text-4xl sm:text-5xl font-light leading-tight">
-            Institutional Wealth <span className="italic">Ecosystem</span>
+            Capital Allocation <span className="italic">Framework</span>
           </h1>
           <div className="h-0.5 w-16 bg-brand-gold mx-auto"></div>
           <p className="font-sans text-sm sm:text-base text-brand-silver max-w-2xl mx-auto leading-relaxed">
-            Replicating the global private banking structures of Geneva and New York, customized for India&apos;s unique regulatory and family landscape.
+            Modeled after global investment holding companies, deploying pooled permanent capital into high-conviction value portfolios and global assets.
           </p>
         </div>
       </section>
@@ -137,10 +137,10 @@ export default function ServicesPage() {
       {/* Engagement Invitation */}
       <section className="py-24 px-4 bg-brand-ivory text-center border-t border-brand-gold/15">
         <div className="mx-auto max-w-3xl space-y-6">
-          <h2 className="font-serif text-3xl text-brand-navy font-light">Structure Your Multi-Generational Wealth</h2>
+          <h2 className="font-serif text-3xl text-brand-navy font-light">Partner with a Value-Driven Holding Company</h2>
           <div className="h-0.5 w-12 bg-brand-gold mx-auto"></div>
           <p className="text-xs sm:text-sm text-brand-slate max-w-xl mx-auto leading-relaxed">
-            Every capability connects to the others in our integrated service framework. Speak to our advisory desk to create a unified Wealth Blueprint for your family capital.
+            Our capabilities are built around permanent capital compounding and aligned co-investment. Speak to our capital desk to explore strategic partnership options.
           </p>
           <div className="pt-4">
             <Link

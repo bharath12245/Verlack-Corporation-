@@ -10,52 +10,52 @@ export default function AboutPageClient() {
   const trustMatrix = {
     regulatory: {
       title: "Regulatory Trust",
-      execution: "Strict adherence to SEBI RIA & PMS guidelines. Fiduciary accountability written into all engagements.",
-      verification: "Statutory third-party annual audits, transparent fee schedules, and public SEBI client grievance reports."
+      execution: "Strict adherence to SEBI regulations and holding company reporting guidelines. Capital pools are separated from operational entities.",
+      verification: "Statutory third-party audits, clear holding reports, and absolute transparency in capital accounts."
     },
     intellectual: {
       title: "Intellectual Trust",
-      execution: "All recommendations generated from empirical research published by the Verlak Research Centre.",
-      verification: "Access to macroeconomic whitepapers, sector deep-dives, and public CIO commentary for auditing."
+      execution: "Allocations are grounded in deep value research published by the Verlak Research Centre, targeting long-term book value growth.",
+      verification: "Empirical whitepapers, historical allocation reviews, and transparent corporate compounder commentary."
     },
     performance: {
       title: "Performance Trust",
-      execution: "Concentrated high-conviction portfolios constructed to maximize risk-adjusted absolute returns.",
-      verification: "Transparent third-party custodian records, direct demat ownership, and standard performance attribution."
+      execution: "Concentrated value portfolios constructed to achieve a high rate of compounding for pooled capital.",
+      verification: "Transparent third-party custodian records, direct equity stakes, and absolute return measurements."
     },
     relationship: {
-      title: "Relationship Trust",
-      execution: "Outsourced CIO services managed directly by named senior partners rather than transactional RMs.",
-      verification: "Significantly low client-to-advisor ratios, direct partner access, and multi-generational succession reviews."
+      title: "Partnership Trust",
+      execution: "Capital relationships managed directly by core allocation partners who co-invest their own capital.",
+      verification: "High capital alignment, direct partner access, and long-term co-investor updates."
     }
   };
 
   const pillars = [
     {
       title: "Intellectual Honesty",
-      desc: "We reject speculative market noise. All client capital allocation strategies originate directly from empirical findings verified by the Verlak Research Centre.",
+      desc: "We reject speculative market noise. All pooled capital allocation strategies originate directly from empirical findings verified by the Verlak Research Centre.",
       icon: BookOpen
     },
     {
-      title: "Fiduciary Purity",
-      desc: "Operating under a zero-commission, pure fee-only advisory framework ensures our operational incentives are fully aligned with client outcomes.",
+      title: "Capital Alignment",
+      desc: "Operating on a co-investment, value-compounding framework ensures our incentives are fully aligned with capital partners—we compound book value together.",
       icon: Scale
     },
     {
       title: "Long-Term Stewardship",
-      desc: "We do not evaluate success across fiscal quarters. We build and secure asset architectures intended to preserve purchasing power across generations.",
+      desc: "We do not evaluate success across fiscal quarters. We build and secure capital holdings intended to compound purchasing power across decades.",
       icon: Shield
     }
   ];
 
   const faqs = [
     {
-      q: "How does Verlak ensure structural continuity across multiple generations?",
-      a: "Our advisory framework operates at the family-unit level rather than on isolated individual accounts. Our dedicated advisors work with family members and their next-generation heirs to integrate estate planning, family values, and structural governance directly into the overarching investment policy statement."
+      q: "How does Verlak ensure structural alignment with capital partners?",
+      a: "Unlike traditional wealth managers who earn fee percentages on assets under management (AUM) regardless of performance, Verlak is modeled as an investment holding company. Our success is directly tied to the book value growth of our investments, compounding our own capital alongside our partners."
     },
     {
-      q: "Who audits the performance metrics and compliance frameworks of Verlak?",
-      a: "Verlak undergoes regular internal and independent external compliance audits to ensure absolute adherence to SEBI investment advisory regulations and data protection requirements. Direct demat holdings allow clients to audit their assets independently in real time."
+      q: "Who audits the investment performance and holding structures of Verlak?",
+      a: "Verlak undergoes regular statutory compliance audits by independent external auditors to ensure absolute corporate transparency. Direct custodian and demat records allow our capital partners to audit the underlying holdings in real time."
     }
   ];
 
@@ -70,11 +70,11 @@ export default function AboutPageClient() {
             About Verlak Corporation
           </span>
           <h1 className="font-serif text-4xl sm:text-5xl font-light leading-tight">
-            Built for Legacies. <span className="italic">Not Benchmarks.</span>
+            Built for Decades. <span className="italic">Not Quarters.</span>
           </h1>
           <div className="h-0.5 w-16 bg-brand-gold mx-auto"></div>
           <p className="font-sans text-sm sm:text-base text-brand-silver max-w-2xl mx-auto leading-relaxed">
-            The institutional foundation designed to deliver global private banking standards with uncompromised local mastery.
+            An investment holding vehicle modeled on permanent capital compounding, value-driven acquisitions, and high-conviction portfolios.
           </p>
         </div>
       </section>
@@ -93,13 +93,13 @@ export default function AboutPageClient() {
             
             <div className="md:col-span-8 space-y-6 text-xs sm:text-sm text-brand-slate leading-relaxed">
               <p>
-                Verlak Corporation was established to address a clear gap in the Indian private wealth sector: high-net-worth and ultra-high-net-worth families lacked access to independent investment intelligence free from product bias and commission alignment.
+                Verlak Corporation was established to pioneer a disciplined holding company model in India. Inspired by global capital allocators like Fairfax Financial Holdings, we recognized that long-term value compounding is best achieved when capital is pooled and allocated with absolute, long-term ownership rather than retail-client churn.
               </p>
               <p>
-                Benchmarked against firms like UBS, BlackRock, and Goldman Sachs, Verlak was engineered from the ground up as an independent investment intelligence institution. The name &apos;Verlak&apos; evokes strength, precision, and permanence—the foundational qualities required to guide multi-generational capital through complex economic cycles.
+                We raise permanent capital from a selective network of HNI families, UHNI compounders, and corporate balance sheets. We do not manage retail client accounts on a fee-for-service basis. Instead, we allocate a centralized pool across high-conviction portfolios, alternatives, and global stakes, focusing solely on building book value. The name &apos;Verlak&apos; evokes strength, precision, and permanence—the core principles that drive our allocation strategies.
               </p>
               <p className="font-serif text-brand-navy italic text-sm border-l-2 border-brand-gold pl-4 py-1">
-                &ldquo;We do not sell products. We build legacies.&rdquo;
+                &ldquo;We do not manage third-party money for fee-generation. We co-invest to compound value.&rdquo;
               </p>
             </div>
           </div>
@@ -230,17 +230,17 @@ export default function AboutPageClient() {
       {/* 7. Closing Call to Action */}
       <section className="py-24 px-4 bg-brand-ivory text-center">
         <div className="mx-auto max-w-3xl space-y-6">
-          <h2 className="font-serif text-3xl text-brand-navy font-light">Partner with an Independent Fiduciary.</h2>
+          <h2 className="font-serif text-3xl text-brand-navy font-light">Partner with a Value-Driven Holding Company</h2>
           <div className="h-0.5 w-12 bg-brand-gold mx-auto"></div>
           <p className="text-xs sm:text-sm text-brand-slate max-w-xl mx-auto leading-relaxed">
-            Discover the long-term compounding benefits of conflict-free investment architecture. Let our senior partners conduct an objective audit of your current holdings.
+            Discover the benefits of co-investing with a permanent capital vehicle. Connect with our capital partners to explore how we compound value together.
           </p>
           <div className="pt-4">
             <Link
               href="/contact"
               className="inline-block px-8 py-3.5 bg-brand-gold text-brand-navy text-xs font-bold tracking-widest uppercase hover:bg-brand-navy hover:text-brand-ivory transition-colors duration-300 shadow-sm"
             >
-              Request a Structural Consultation
+              Request a Partner Consultation
             </Link>
           </div>
         </div>
